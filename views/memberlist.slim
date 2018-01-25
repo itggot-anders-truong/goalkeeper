@@ -1,0 +1,6 @@
+-members.each do |member|
+    p
+        =member[1]
+    -if role[0][0] == "goalkeeper"
+        form method="POST" action="changerole/#{member[0]}"
+            input type="submit" value="Change Role"

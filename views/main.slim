@@ -1,0 +1,12 @@
+form method="POST" action="create_group"
+    input type="name" placeholder="Group name" name="name"
+    input type="name" placeholder="Group code" name="code"
+    input type="submit" value="Create group"
+end
+form method="POST" action="join_group"
+    input type="code" placeholder="Group code" name="code"
+    input type="submit" value="Join Group"
+end
+
+-groups.each do |group|
+    a href="/group/#{group[0]}" #{group[1]}

@@ -1,0 +1,10 @@
+-if role[0][0] == "goalkeeper"
+    form method="POST" action="/delete_group/#{group_id}"
+        input type="Submit" value="Delete group"
+    form method="POST" action="/create_goal/#{group_id}"
+        input type="text" placeholder="Content" name="content"
+        input type="Submit" value="Create goal"
+a href="memberlist/#{group_id}" Members 
+-goals.each do |goal|
+    p
+        =goal[1]
