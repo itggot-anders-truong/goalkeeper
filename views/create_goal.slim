@@ -1,0 +1,9 @@
+form action="create_goal/#{group_id}" method="POST"
+    input type="text" placeholder="Title" name="title"
+    input type="text" placeholder="Description" name="description"
+    input type="submit" value="Create Goal"
+
+form method="POST" action="../logout"
+    input class="logout" type="submit" value="Log out"
+
+h2 class="logged_in_as" Logged in as: #{current_user}

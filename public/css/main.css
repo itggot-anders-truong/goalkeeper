@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: comic sans MS;
+}
+
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: #2e3192;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    border-bottom: white solid 3px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 55px;
+}
+
+
+.logout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 100px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: comic sans MS;
+}
+
+.logged_in_as {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#main .create_group, #main .join_group {
+    height: 200px;
+    width: 100vw;
+    border-bottom: solid blue 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main h3 {
+    color: #2e3192;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main .submit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2e3192;
+    margin: 10px;
+    font-family: comic sans MS;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+}

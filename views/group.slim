@@ -1,10 +1,22 @@
+-if role[0][0] == "goalfollower"
+    form method="POST" action="leave_group/#{id}/#{group_id}"
+        input type="submit" value="Leave group"
+
 -if role[0][0] == "goalkeeper"
     form method="POST" action="/delete_group/#{group_id}"
         input type="Submit" value="Delete group"
-    form method="POST" action="/create_goal/#{group_id}"
-        input type="text" placeholder="Content" name="content"
-        input type="Submit" value="Create goal"
+    a href="create_goal/#{group_id}" Create a new goal
 a href="memberlist/#{group_id}" Members 
--goals.each do |goal|
-    p
+-goals.each do |goal|    
+    a href="/#{group_id}/goal/#{goal[0]}" 
         =goal[1]
+
+
+form method="POST" action="../logout"
+    input class="logout" type="submit" value="Log out"
+
+
+
+a href="javascript:history.back()" back
+
+h2 class="logged_in_as" Logged in as: #{current_user}
